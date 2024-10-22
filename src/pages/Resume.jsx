@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-    <div>
+    <div className="flexDiv">
       <h1>Resume Page</h1>
       <p>Resume download goes here</p>
 
