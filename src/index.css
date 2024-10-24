@@ -10,6 +10,35 @@ body {
   transition: color 0.3s;
 }
 
+.tooltipText {
+  display: none;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+
+  /* Position the tooltip */
+  white-space: nowrap;
+  position: absolute;
+  z-index: 1;
+}
+
+.to-hover .tooltipText::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.to-hover:hover .tooltipText {
+  display: block;
+}
+
 .nav-link:hover {
   color: #0a66c2;
 }
