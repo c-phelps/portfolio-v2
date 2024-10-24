@@ -1,3 +1,6 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function About() {
   return (
     <div className="flexDiv">
@@ -18,26 +21,18 @@ export default function About() {
         about improving at chess and a dedicated supporter of Liverpool FC. In my spare time, I’m looking to expand my
         hobbies by learning to play the piano/keyboard.
       </p>
-      <li className="nav-item">
-        <a
-          href="https://github.com/c-phelps"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link"
-        >
-          GitHub
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="https://linkedin.com/in/your-profile"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link"
-        >
-          Linkedin
-        </a>
-      </li>
+      <ul className="nav justify-content-center list-unstyled">
+        <li className="nav-item mx-3">
+          <a href="https://github.com/c-phelps" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="4x" style={{ color: "#000" }} />
+          </a>
+        </li>
+        <li className="nav-item mx-3">
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} size="4x" style={{ color: "#0077b5" }} />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
